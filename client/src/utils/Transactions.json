@@ -1,0 +1,50 @@
+{
+    "_format": "hh-sol-artifact-1",
+    "contractName": "Transactions",
+    "sourceName": "contracts/Transactions.sol",
+    "abi": [
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "receiver",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          }
+        ],
+        "name": "Transfer",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "addToBlockchain",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "bytecode": "0x608060405234801561001057600080fd5b5061010c806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806341d44af714602d575b600080fd5b60336035565b005b600160008082825460459190604e565b92505081905550565b6000605782609d565b9150606083609d565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115609257609160a7565b5b828201905092915050565b6000819050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea2646970667358221220304fe9c5b743c58dba299d18f37bd0d224cdd61e6803d43fb28e34edbfb3913164736f6c63430008000033",
+    "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806341d44af714602d575b600080fd5b60336035565b005b600160008082825460459190604e565b92505081905550565b6000605782609d565b9150606083609d565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115609257609160a7565b5b828201905092915050565b6000819050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea2646970667358221220304fe9c5b743c58dba299d18f37bd0d224cdd61e6803d43fb28e34edbfb3913164736f6c63430008000033",
+    "linkReferences": {},
+    "deployedLinkReferences": {}
+  }
+  
