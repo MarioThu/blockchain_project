@@ -6,7 +6,9 @@ const NavbarItem = ({title,classProps}) => {
         </li>
     );
 }
+const connectWallet = () => {
 
+}
 const Navbar = () => {
     return(
         <nav className="w-full flex md:justify-center justify-between items-center p-4">
@@ -18,7 +20,12 @@ const Navbar = () => {
                     <NavbarItem key ={item+index} title={item}/>
                 ))}
             </ul>
+            <button type ="button" onClick={connectWallet} className = "flex flex-row my-5 justify-center p-3 bg-secondary rounded-full">
+                <p className ="text-black text-base font-semibold">
+                    Connect Wallet
+                </p>
+            </button>
         </nav>
     );
 }
-export default Navbar
+export default Navbar 
