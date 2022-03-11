@@ -2,12 +2,15 @@ import { Navbar, Welcome} from './components';
 
 const App = () => {
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-welcome">
+    <div className="min-h-screen bg-white">
+      <div className="bg-primary">
         <Navbar />
-        <Welcome />  
+          
       </div>
-     
+      <div className ="bg-white">
+        <Welcome />
+      </div>
+      
     </div>
   )
 }
