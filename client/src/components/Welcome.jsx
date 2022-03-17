@@ -13,32 +13,44 @@ const Input = ({placeholder,name,type,value,handleChange}) => {
 const handleChange = () => {
 
 }
-const Welcome =() =>{
-    const connectWallet = () => {
+const WelcomeCategory = ({name,type}) =>{
+
+    return(
+    <welcomecategory className="flex flex-col bg-secondary py-16 px-5 mx-20 my-10">
+        <h1 className="text-4xl ">
+            {name}
+        </h1>
+        <div className ="flex h-8 "/>
+        <div className="text-white md:flex  flex-row space-x-2 items-center flex-initial overflow-x-auto">
+            {["Artist1","Artist2","Artist3","Artist4","Artist5","Artist6","Artist7","Artist8","Artist9"].map((item,index)=>(
+                <ArtistShortCuts key={item+index} name={item}/>
+            ))}
+        </div>
+    </welcomecategory>
+    )
+}
+const ArtistShortCuts = ({name}) =>{
+    return(
+        <div className="bg-primary rounded-md border-4 border-solid flex-col min-w-min" onClick={openArtist}>
+            <div className="bg-primary w-80 h-80">
+                Bild
+            </div>
+            <h1 className="px-6 text-4xl w-80">
+                {name}
+            </h1>
+        </div>
+    )
+    const openArtist = () =>{
         
     }
-    const sendEth = () => {
 
-    }
+}
+const Welcome = () =>{
     return(
-        <welcome className ="flex w-full justify-center items-center">
-            <div className = "flex flex-1 flex-col w-full justify-center items-center" >
-                <h1 className = "text-white text-3xl  sm:text-5xl">
-                    test transactions
-                </h1>
-                <button type ="button" onClick={connectWallet} className = "flex flex-row my-5 justify-center p-3 bg-[#2952e3] rounded-full">
-                    <p className ="text-white text-base font-semibold">Connect Wallet</p>
-                </button>
-            </div>
-            <div className = "flex w-1/4 flex-col justify-start items-center my-5 blue-glassmorphism">
-                <Input placeholder="Address To" name="adressTo" type="text"></Input>
-                <Input placeholder="Amount ETH" name="amount_eth" type="text"></Input>
-                <button type="button" onClick={sendEth} className = "flex flex-row my-5 justify-center p-3 bg-[#2952e3] rounded-full">
-                    <p className ="text-white text-base font-semibold">
-                        Send Ethereum
-                    </p>
-                </button>
-            </div> 
+        <welcome>
+            <WelcomeCategory name = "Trending Artists"> </WelcomeCategory>
+            <WelcomeCategory name = "Newest Artists"> </WelcomeCategory>
+            <WelcomeCategory name = "Popular Artists"> </WelcomeCategory>            
         </welcome>
     )
 
