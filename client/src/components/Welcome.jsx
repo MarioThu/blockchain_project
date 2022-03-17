@@ -14,7 +14,6 @@ const handleChange = () => {
 
 }
 const WelcomeCategory = ({name,type}) =>{
-
     return(
     <welcomecategory className="flex flex-col bg-secondary py-16 px-5 mx-20 my-10">
         <h1 className="text-4xl ">
